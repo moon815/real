@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TodoList</title>
+  <script src="https://kit.fontawesome.com/359c344b44.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="./todoList.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div id="date" class="date">
+      </div>
+      <div id="time" class="time">
+
+      </div>
+    </header>
+    <main>
+      <div class="todoTitle">
+        <p>What are you going to do today?</p>
+      </div>
+      <div class="todoList" id="todoList">
+      </div> 
+      <div class="todo" id="add">
+        <div class="addBox">
+          <i class="far fa-plus-square" id="addBox"></i>
+        </div>
+      </div>
+    </main>
+    <div class="footer-wrap">
+      <footer>
+        <div class="circle">
+          <a href="https://www.google.com/">
+            <div class="icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/800px-Google_%22G%22_Logo.svg.png" alt="">       
+            </div>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="https://www.youtube.com/">
+            <div class="icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/YouTube_full-color_icon_%282017%29.svg/2560px-YouTube_full-color_icon_%282017%29.svg.png" alt="">       
+            </div>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="https://www.facebook.com/">
+            <div class="icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Facebook_f_logo_%282019%29.svg/1365px-Facebook_f_logo_%282019%29.svg.png" alt="">
+            </div>
+          </a>
+        </div>
+        <div class="circle">
+          <a href="https://www.discord.gg/">
+            <div class="icon">
+              <img src="https://www.svgrepo.com/show/353655/discord-icon.svg" alt="">       
+            </div>
+          </a>
+        </div>
+      </footer>
+      <div class="circle" id="addgo">
+        <div class="icon">
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </div>
+    </div>
+    <div class="addbaro" id="addbaro">
+      <div class="bg"></div>
+      <form class="form">
+        <h2>바로가기 추가</h2>
+          <div class="formbox">
+            <label id="label" aria-hidden="true">이름</label>
+            <input class="name" type="text" maxlength="12"/>
+            <label id="label" aria-hidden="true">주소</label>
+            <input class="url" type="text" maxlength="300"/>
+          </div>  
+        <div class="intent">
+          <a href="#">취소</a>
+          <a href="#">완료</a>
+        </div>
+      </form>
+    </div>
+  </div>
+  <script src="./todolist.js"></script>
+</body>
+</html>
